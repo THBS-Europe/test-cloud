@@ -4,10 +4,15 @@ description: <p><b>Hi Team - This is the Cloud Web Portal service API documentat
 basePath: /clouddictionariesapi
 openApiSpec: test-cloud.yaml
 environmentSpec: Dev
+type: API
 authMethod: none
+azureRateLimit:
+  noOfCalls: 34
+  renewalPeriod: 12
+  ratepolicy: api
+  counter: ip-address
 responseCache:
   timeDuration: 56
-corelation:
-  correlationId: "true"
+  cachepolicy: api
 schemes: []
 routes: []
